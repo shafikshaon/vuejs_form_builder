@@ -2,6 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
+                <h2>Sample form</h2>
                 <form @submit.prevent="submit" class="form-template">
                     <!-- Form Template -->
                     <template v-for="(field, key) in formFields">
@@ -12,7 +13,7 @@
                                     :id="`${_uid}-${field.name}`"
                                     :is="field.component"
                                     :name="field.name"
-                                    :options="!!field.options.choices ? field.options.choices : false"
+                                    :options="!!field.options.choices ? field.options : false"
                                     :type="field.type"
                                     @input="updateField({ key: field.name, value: formData[field.name] })"
                                     v-bind="{ ...field.options.attrs }"
@@ -27,6 +28,7 @@
                 </form>
             </div>
             <div class="col-md-6">
+                <h2>Sample output</h2>
                 <form-result/>
             </div>
         </div>

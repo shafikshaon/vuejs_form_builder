@@ -2,7 +2,7 @@
   {
     "type": "text",
     "label": "First name",
-    "name": "first_ame",
+    "name": "first_name",
     "options": {
       "attrs": {
         "placeholder": "First name"
@@ -18,6 +18,27 @@
       "attrs": {
         "placeholder": "Last name"
       }
+    },
+    "validation": "required"
+  },
+  {
+    "type": "single_select",
+    "label": "Gender",
+    "name": "gender",
+    "options": {
+      "attrs": {
+        "placeholder": "Gender"
+      },
+      "choices": [
+        {
+          "code": "male",
+          "label": "Male"
+        },
+        {
+          "code": "female",
+          "label": "Female"
+        }
+      ]
     },
     "validation": "required"
   },

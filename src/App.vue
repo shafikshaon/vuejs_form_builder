@@ -15,5 +15,6 @@
     }
 </script>
 <style>
-    @import 'assets/styles/pulse.css'
+    @import 'assets/styles/vue-select.css';
+    @import 'assets/styles/pulse.css';
 </style>

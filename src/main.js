@@ -3,6 +3,9 @@ import App from "./App.vue"
 
 import store from "./store"
 import VeeValidate from "vee-validate"
+import vSelect from 'vue-select'
+
+Vue.component('v-select', vSelect)
 
 import "./directives"
 
