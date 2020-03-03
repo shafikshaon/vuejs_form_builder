@@ -1,66 +1,40 @@
 [
   {
     "type": "text",
-    "label": "First Name",
-    "name": "firstName",
+    "label": "First name",
+    "name": "first_ame",
     "options": {
       "attrs": {
-        "placeholder": "First Name"
+        "placeholder": "First name"
       }
     },
     "validation": "required|max:10"
   },
   {
     "type": "text",
-    "label": "Last Name",
-    "name": "lastName",
+    "label": "Last name",
+    "name": "last_name",
     "options": {
       "attrs": {
-        "placeholder": "Last Name"
+        "placeholder": "Last name"
       }
     },
     "validation": "required"
   },
   {
-    "type": "check",
-    "label": "Courses",
-    "name": "courses",
-    "options": {
-      "choices": [
-        "Project Management",
-        "Business Analysis",
-        "Product Management"
-      ]
-    },
-    "validation": "required"
-  },
-  {
-    "type": "check",
-    "label": "Study Option",
-    "name": "studyOption",
-    "options": {
-      "choices": [
-        "Full-time",
-        "Part-time",
-        "Distant"
-      ]
-    },
-    "validation": "required"
-  },
-  {
     "type": "text",
-    "label": "Your Email",
+    "label": "Your email",
     "name": "email",
     "options": {
       "attrs": {
-        "placeholder": "Your Email"
+        "placeholder": "Your email"
       }
     },
     "validation": "required|email"
   },
   {
     "type": "text",
-    "label": "Your phone Number",
+    "label": "Your phone number",
     "name": "phone",
     "options": {
       "attrs": {
@@ -78,6 +52,6 @@
         "placeholder": "Write here..."
       }
     },
-    "validation": "required"
+    "validation": ""
   }
 ]

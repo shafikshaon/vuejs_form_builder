@@ -1,5 +1,5 @@
 <template>
-    <div class="form-error-message">
+    <div class="text-danger">
         <span> <slot/> </span>
     </div>
 </template>

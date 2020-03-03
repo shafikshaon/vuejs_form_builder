@@ -15,4 +15,5 @@
     }
 </script>
 <style>
+    @import 'assets/styles/pulse.css'
 </style>
