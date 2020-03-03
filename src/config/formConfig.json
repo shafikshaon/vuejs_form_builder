@@ -43,6 +43,27 @@
     "validation": "required"
   },
   {
+    "type": "api_single_select",
+    "label": "Gender",
+    "name": "gender",
+    "options": {
+      "attrs": {
+        "placeholder": "Gender"
+      },
+      "choices": [
+        {
+          "code": "male",
+          "label": "Male"
+        },
+        {
+          "code": "female",
+          "label": "Female"
+        }
+      ]
+    },
+    "validation": "required"
+  },
+  {
     "type": "text",
     "label": "Your email",
     "name": "email",
