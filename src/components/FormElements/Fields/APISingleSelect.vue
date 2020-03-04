@@ -1,8 +1,7 @@
 <template>
     <div>
         <v-select
-                :filterable="false"
-                :options="options"
+                :options="api_options"
                 :placeholder="options.attrs.placeholder"
                 @search="onSearch"
                 v-model="selectedValue"
@@ -11,12 +10,18 @@
 </template>
 <script>
     export default {
-        props: ["value"],
+        props: ["value", "options"],
         data() {
-            return {selectedValue: '', options: [{}]}
+            return {
+                selectedValue: '',
+                api_options: [
+                    {"code": "", "label": "Select one"}
+                ],
+            }
         },
         methods: {
             onSearch(search) {
+                // eslint-disable-next-line no-console
                 console.log(search)
             }
         },

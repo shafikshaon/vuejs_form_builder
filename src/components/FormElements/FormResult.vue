@@ -1,7 +1,7 @@
 <template>
     <div class="form-complete" id="complete">
         <p :key="index" v-for="(item, key, index) in $store.state.lead.formData">
-            <span v-colorswatch:color="index"> {{ key }}: </span> {{ item }}
+            <span> {{ key }}: </span> {{ item }}
         </p>
     </div>
 </template>

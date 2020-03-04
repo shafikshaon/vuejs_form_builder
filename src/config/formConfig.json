@@ -43,23 +43,35 @@
     "validation": "required"
   },
   {
-    "type": "api_single_select",
-    "label": "Gender",
-    "name": "gender",
+    "type": "multiple_select",
+    "label": "Skill",
+    "name": "skill",
     "options": {
       "attrs": {
-        "placeholder": "Gender"
+        "placeholder": "Skill"
       },
       "choices": [
         {
-          "code": "male",
-          "label": "Male"
+          "code": "python",
+          "label": "Python"
         },
         {
-          "code": "female",
-          "label": "Female"
+          "code": "javascript",
+          "label": "JavaScript"
         }
       ]
+    },
+    "validation": "required"
+  },
+  {
+    "type": "api_single_select",
+    "label": "Country",
+    "name": "country",
+    "options": {
+      "attrs": {
+        "placeholder": "Country"
+      },
+      "choices": []
     },
     "validation": "required"
   },
